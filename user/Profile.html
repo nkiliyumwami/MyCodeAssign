@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/80f6d44bf3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav class="navbar bg-success navbar-dark fixed top">
+      <span class="navbar-brand h1 mb-0">Profile</span>
+      <a href="Profile.html"><i class="fas fa-check"></i></a>
+    </nav>
+    <div class="container">
+      <form class="form-group">
+        <div>
+          <label for="username">User Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="Enter your username here.."
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Enter your e-mail here.."
+          />
+        </div>
+        <div>
+          <label for="firstName">First Name</label>
+          <input
+            class="form-control"
+            id="firstName"
+            placeholder="Enter your first name.."
+          />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="lastName"
+            placeholder="Enter your last name.."
+          />
+        </div>
+      </form>
+      <a class="btn btn-primary btn-block" href="WebsiteList.html">Websites</a>
+      <a class="btn btn-danger btn-block" href="Login.html">Logout</a>
+
+      <nav class="navbar bg-success  fixed-bottom">
+        <span></span>
+        <a class="text-light" href="Profile.html"
+          ><i class="fas fa-user"></i
+        ></a>
+      </nav>
+    </div>
+  </body>
+</html>
