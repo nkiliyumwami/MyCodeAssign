@@ -15,17 +15,19 @@
       src="https://kit.fontawesome.com/199fb83179.js"
       crossorigin="anonymous"
     ></script>
-    <title>Edit Page</title>
+    <title>Edit Widget</title>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light fixed-top">
       <div>
-        <a class="text-dark" href="PageList.html"
-          ><i class="fas fa-chevron-left"></i
-        ></a>
-        <span class="navbar-brand h1 mb-0 ml-4">Edit Page</span>
+        <a href="WidgetList.html" class="text-dark">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <span class="navbar-brand h1 mb-0 ml-4">Edit Widget</span>
       </div>
-      <a class="text-dark" href="PageList.html"><i class="fas fa-check"></i></a>
+      <a href="WidgetList.html" class="text-dark">
+        <i class="fas fa-check"></i>
+      </a>
     </nav>
     <main class="container">
       <form>
@@ -34,24 +36,42 @@
           <input
             type="text"
             id="name"
+            placeholder="Enter widget name..."
             class="form-control"
-            placeholder="Enter page name..."
-            value="Blog Post"
           />
         </div>
         <div class="form-group">
-          <label for="title">Title</label>
+          <label for="text">Text</label>
           <input
             type="text"
+            id="text"
+            placeholder="Enter widget text..."
             class="form-control"
-            id="title"
-            placeholder="Enter page title..."
           />
         </div>
-        <a href="PageList.html" class="btn btn-danger btn-block">Delete</a>
+        <div class="form-group">
+          <label for="url">URL</label>
+          <input
+            type="text"
+            id="url"
+            placeholder="Enter YouTube Address.."
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="width">Width</label>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            class="form-control"
+            id="width"
+          />
+        </div>
+        <button class="btn btn-danger btn-block">Delete</button>
       </form>
     </main>
-    <footer class="navbar navbar-light bg-light fixed-bottom">
+    <footer class="navbar navbar-light fixed-bottom">
       <span></span>
       <a href="../user/Profile.html" class="text-dark">
         <i class="fas fa-user"></i>
